@@ -229,6 +229,10 @@ ul {
   margin-top: 50px;
   display: flex;
 }
+.border-waktu-kegiatan p {
+  color: black;
+}
+
 .border-kegiatan {
   width: 371px;
   height: 392px;
@@ -238,9 +242,9 @@ ul {
   align-items: center;
   margin-left: 60px;
   margin-bottom: 100px;
-  background-color: #ff9501;
+  /* background-color: #ff9501; */
   border-radius: 20px;
-  box-shadow: 2px 2px 20px #ff9900;
+  /* box-shadow: 2px 2px 20px #ff9900; */
 }
 .border-kegiatan2 {
   width: 371px;
@@ -251,9 +255,9 @@ ul {
   align-items: center;
   margin-left: 60px;
   margin-right: 60px;
-  background-color: #ff9501;
+  /* background-color: #ff9501; */
   border-radius: 20px;
-  box-shadow: 2px 2px 20px #ff9900;
+  /* box-shadow: 2px 2px 20px #ff9900; */
 }
 .border-kegiatan3 {
   width: 371px;
@@ -263,9 +267,9 @@ ul {
   justify-content: center;
   align-items: center;
   margin-right: 60px;
-  background-color: #ff9501;
+  /* background-color: #ff9501; */
   border-radius: 20px;
-  box-shadow: 2px 2px 20px #ff9900;
+  /* box-shadow: 2px 2px 20px #ff9900; */
 }
 .border-waktu img {
   width: 230px;
@@ -723,9 +727,9 @@ ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    background-color: #ff9501;
+    background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px #ff9900;
+    /* box-shadow: 2px 2px 20px #ff9900; */
     margin-left: 0;
   }
   .border-kegiatan2 {
@@ -736,9 +740,9 @@ ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    background-color: #ff9501;
+    background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px #ff9900;
+    /* box-shadow: 2px 2px 20px #ff9900; */
     margin-left: 0;
     margin-right: 0;
   }
@@ -750,9 +754,9 @@ ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    background-color: #ff9501;
+    background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px #ff9900;
+    /* box-shadow: 2px 2px 20px #ff9900; */
     margin-left: 0;
     margin-right: 0;
   }
