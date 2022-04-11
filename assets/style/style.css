@@ -16,6 +16,9 @@
 :root {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 .nav-logo a {
   margin-left: 70px;
   text-decoration: none;
@@ -548,9 +551,11 @@ ul {
     box-shadow: 5px 5px 10px #c97b07;
   }
   .conten-gambar img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 80%;
     order: 1;
+    margin-left: 0;
+    left: 0;
   }
   #tentang {
     height: 600px;
@@ -906,5 +911,65 @@ ul {
   .container {
     display: flex;
     flex-direction: column;
+  }
+  .deskription-footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copy {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .copy h5 {
+    font-size: 25px;
+    font-family: "Oswald";
+  }
+  .contact h5 {
+    margin-left: 0;
+    font-size: 17px;
+    font-family: "Oswald";
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .contact a {
+    color: black;
+    font-family: "Poppins";
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .about a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: "Poppins";
+  }
+  .about h5 {
+    font-size: 17px;
+    font-family: "Oswald";
+  }
+  #footer {
+    margin: 0;
+    background-color: grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #footer p {
+    font-family: "Poppins";
+    font-size: 15px;
+  }
+  #footer .copy p {
+    font-size: 20px;
   }
 }
