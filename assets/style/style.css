@@ -369,6 +369,10 @@ ul {
   margin-right: 100px;
   height: 480px;
 }
+
+.conten-testimoni .container {
+  position: relative;
+}
 .gambar-kutip-2 img {
   margin-top: -50px;
   height: 160px;
@@ -414,8 +418,8 @@ ul {
   background-color: white;
 }
 .card-testi2 {
-  position: absolute;
   margin-top: -60px;
+  position: absolute;
   width: 290px;
   margin-left: 388px;
   height: 386px;
@@ -424,9 +428,9 @@ ul {
   box-shadow: 0px 0px 20px #e4d3c3;
 }
 .card-testi3 {
-  position: absolute;
   margin-top: -60px;
   width: 290px;
+  position: absolute;
   margin-left: 740px;
   height: 386px;
   border-radius: 10px;
@@ -508,6 +512,9 @@ ul {
   .nav-link {
     display: none;
   }
+  .navbar {
+    z-index: 4;
+  }
   #conten {
     margin-top: 50px;
     display: flex;
@@ -553,9 +560,12 @@ ul {
   .conten-gambar img {
     width: 80%;
     height: 80%;
-    order: 1;
-    margin-left: 0;
-    left: 0;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
   }
   #tentang {
     height: 600px;
@@ -794,6 +804,7 @@ ul {
   }
   #testimonial {
     margin-left: 0;
+    height: auto;
   }
   .judul-testimoni {
     margin-left: 0;
@@ -833,7 +844,6 @@ ul {
     width: auto;
     margin-left: 30px;
     margin-right: 30px;
-    height: 550px;
     display: flex;
     flex-direction: column;
   }
@@ -866,41 +876,48 @@ ul {
     margin-top: 30px;
     width: 100px;
     height: 125px;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .card-testi {
-    margin-top: 30px;
-    width: auto;
+    width: 100%;
     margin-right: 60px;
-    height: 386px;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #e4d3c3;
     background-color: white;
+    position: relative;
+    margin-left: 0;
   }
+
   .card-testi2 {
-    margin-top: -60px;
-    position: absolute;
-    width: 290px;
-    margin-left: 30px;
-    height: 386px;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0;
+    height: 100%;
+    position: relative;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #e4d3c3;
     background-color: white;
-    display: none;
   }
   .card-testi3 {
-    margin-top: -60px;
-    position: absolute;
-    width: 290px;
-    margin-left: 30px;
-    height: 386px;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    /* margin-left:    30px; */
+    margin-left: 0;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #e4d3c3;
     background-color: white;
-    display: none;
+  }
+
+  .card-testi h6,
+  .card-testi2 h6,
+  .card-testi3 h6 {
+    margin-bottom: 20px;
   }
   .gambar-kutip-2 img {
     margin-top: -40px;
@@ -908,9 +925,16 @@ ul {
     position: relative;
     width: 70px;
   }
-  .container {
+
+  .conten-testimoni {
+    height: auto;
+    padding: 20px;
+  }
+
+  .conten-testimoni .container {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
   }
   .deskription-footer {
     height: auto;
@@ -925,6 +949,9 @@ ul {
   .copy h5 {
     font-size: 25px;
     font-family: "Oswald";
+  }
+  .copy p {
+    font-size: 15px;
   }
   .contact h5 {
     margin-left: 0;
