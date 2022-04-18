@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "Oswald";
@@ -22,9 +23,6 @@ body .container {
 :root {
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-}
 .nav-logo a {
   margin-left: 70px;
   text-decoration: none;
@@ -35,6 +33,21 @@ body {
   color: black;
 }
 
+.bar {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 2px;
+}
+.toggle-menu {
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
 .navbar {
   width: 1263px;
   margin: auto;
@@ -58,7 +71,7 @@ ul li a {
   margin: 35px;
 }
 ul li a:hover {
-  color: grey;
+  color: orange;
 }
 ul {
   list-style: none;
@@ -69,8 +82,8 @@ ul {
   display: flex;
 }
 
-.sign-in a {
-  color: black;
+.nav-link .button li a {
+  color: orange;
   margin-left: 35px;
   text-decoration: none;
   margin-right: 70px;
@@ -79,9 +92,9 @@ ul {
   border-radius: 10px;
   font-family: "Poppins";
 }
-.sign-in a:hover {
-  color: white;
+.button a:hover {
   background-color: orange;
+  color: white;
 }
 
 #conten {
@@ -542,15 +555,55 @@ ul {
 #footer .copy p {
   font-size: 20px;
 }
-@media screen and (max-width: 480px) {
-  .nav-link {
+@media screen and (max-width: 460px) {
+  .nav-link ul {
     display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+    left: 0;
+  }
+  .nav-link li a {
+    padding: 10px;
+  }
+  .nav-link li a:hover {
+    color: orange;
+  }
+  .nav-logo {
+    margin-right: 200px;
+    width: 300px;
+    margin-left: 20px;
   }
   .navbar {
-    z-index: 4;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  ul li a {
+    margin: 0;
+  }
+  .nav-link ul.active {
+    display: flex;
+  }
+  .toggle-menu {
+    position: absolute;
+    top: 45px;
+    left: 400px;
+    opacity: 1;
+    margin-top: -30px;
+  }
+  .nav-logo a {
+    font-size: 30px;
+    left: 0;
+    margin-left: 20px;
   }
   #conten {
-    margin-top: 50px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1032,5 +1085,11 @@ ul {
   }
   #footer .copy p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .toggle-menu {
+    left: 300px;
   }
 }
