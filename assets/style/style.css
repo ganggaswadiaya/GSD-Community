@@ -4,14 +4,19 @@
 }
 @font-face {
   font-family: "Oswald";
-  src: url("/Oswald/Oswald-VariableFont_wght.ttf");
+  src: url("/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/Poppins/Poppins-Light.ttf");
+  src: url("/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
 }
 #home {
   scroll-margin-top: 50px;
+}
+body {
+  margin: auto;
 }
 :root {
   scroll-behavior: smooth;
@@ -24,7 +29,8 @@ body {
   text-decoration: none;
   width: auto;
   font-size: 30px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   color: black;
 }
 
@@ -86,7 +92,7 @@ ul {
 }
 .conten-deskripsi h3 {
   margin-top: 200px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 50px;
   margin-left: 315px;
   text-align: right;
@@ -126,7 +132,7 @@ ul {
   padding-top: 60px;
   margin-left: 70px;
   font-size: 50px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 
 .judul-tentang hr {
@@ -204,10 +210,10 @@ ul {
 }
 
 .judul-lakukan {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   margin-left: 70px;
   font-size: 50px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 
 .judul-lakukan hr {
@@ -228,6 +234,8 @@ ul {
 .border-waktu-kegiatan {
   margin-top: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .border-waktu-kegiatan p {
   color: black;
@@ -240,7 +248,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  margin-top: 70px;
   margin-bottom: 100px;
   /* background-color: #ff9501; */
   border-radius: 20px;
@@ -253,8 +262,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
   /* background-color: #ff9501; */
   border-radius: 20px;
   /* box-shadow: 2px 2px 20px #ff9900; */
@@ -266,7 +275,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   /* background-color: #ff9501; */
   border-radius: 20px;
   /* box-shadow: 2px 2px 20px #ff9900; */
@@ -300,10 +309,10 @@ ul {
   border-radius: 10px;
 }
 .border-waktu3 img {
-  margin-top: 20px;
+  margin-top: -20px;
   margin-bottom: 30px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .border-waktu3 {
   margin-top: 25px;
@@ -330,16 +339,16 @@ ul {
   margin-top: 40px;
   margin-left: 43px;
   margin-right: 43px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-bottom: 40px;
   color: white;
 }
 .border-kegiatan3 p {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 43px;
   margin-right: 43px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-bottom: 40px;
   color: white;
 }
@@ -354,9 +363,9 @@ ul {
   background-color: #ff9501;
 }
 .judul-testimoni h4 {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 50px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 .judul-testimoni hr {
   width: 270px;
@@ -487,18 +496,36 @@ ul {
 }
 .copy h5 {
   font-size: 25px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 .contact h5 {
   font-size: 17px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 .contact {
   margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.contact a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 .about h5 {
   font-size: 17px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 #footer {
   background-color: grey;
@@ -534,7 +561,7 @@ ul {
   }
   .conten-deskripsi h3 {
     margin-top: 20px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 50px;
     text-align: center;
     margin-bottom: 36px;
@@ -544,7 +571,7 @@ ul {
   .conten-deskripsi h6 {
     text-align: center;
     margin-top: 50px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     margin-bottom: 30px;
   }
@@ -554,7 +581,7 @@ ul {
     padding: 20px;
     border-radius: 20px;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: white;
     display: flex;
     text-align: center;
@@ -583,7 +610,7 @@ ul {
     text-align: center;
     padding-top: 60px;
     font-size: 30px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
   }
 
   .judul-tentang hr {
@@ -614,7 +641,7 @@ ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin-left: 0;
     margin-right: 0;
     margin-top: 30px;
@@ -658,7 +685,7 @@ ul {
   }
 
   .border-conten p {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 10px;
     margin-left: 0;
     margin-right: 0;
@@ -681,12 +708,12 @@ ul {
   }
 
   .judul-lakukan {
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
     margin-left: 0;
     margin-right: 0;
@@ -706,7 +733,7 @@ ul {
     align-items: center;
     text-align: center;
     font-size: 15px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin-right: 0;
     margin-left: 30px;
     margin-right: 30px;
@@ -802,7 +829,7 @@ ul {
     margin-top: 10px;
     margin-left: 35px;
     margin-right: 35px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin-bottom: 40px;
     color: white;
   }
@@ -824,9 +851,9 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 30px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     margin-left: 0;
     margin-right: 0;
   }
@@ -952,7 +979,7 @@ ul {
   }
   .copy h5 {
     font-size: 25px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
   }
   .copy p {
     font-size: 15px;
@@ -960,7 +987,7 @@ ul {
   .contact h5 {
     margin-left: 0;
     font-size: 17px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
   }
   .contact {
     display: flex;
@@ -970,7 +997,7 @@ ul {
   }
   .contact a {
     color: black;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 13px;
     text-decoration: none;
   }
@@ -984,11 +1011,11 @@ ul {
     color: black;
     font-size: 13px;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
   }
   .about h5 {
     font-size: 17px;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
   }
   #footer {
     margin: 0;
@@ -997,7 +1024,7 @@ ul {
     padding-bottom: 50px;
   }
   #footer p {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
   }
   #footer .copy p {
